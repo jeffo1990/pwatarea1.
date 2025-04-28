@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Biografía - Navegación Responsiva</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #040b0e;
+        }
+        nav {
+            background-color: #cfdd0e;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 10px 0;
+        }
+        nav a {
+            color: rgb(141, 23, 23);
+            text-decoration: none;
+            margin: 10px;
+            font-size: 18px;
+            padding: 8px 12px;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        nav a:active {
+            background-color: #110a02;
+            color: #00ff15;
+        }
+        section {
+            padding: 50px;
+            margin: 20px;
+            background-color: rgb(185, 221, 245);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(88, 226, 141, 0.1);
+        }
+        h2 {
+            color: #17cc3e;
+        }
+
+        /* --- Media Queries para hacerlo responsivo --- */
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+            nav a {
+                font-size: 20px;
+                margin: 5px 0;
+            }
+            section {
+                margin: 10px;
+                padding: 30px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            nav a {
+                font-size: 18px;
+                padding: 10px;
+            }
+            h2 {
+                font-size: 24px;
+            }
+            section {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#biografia">Biografía</a>
+        <a href="#hobbies">Hobbies</a>
+        <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+        <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+    </nav>
+
+    <section id="inicio">
+        <h2>Inicio</h2>
+        <p>Bienvenido a mi página personal donde conoceras más sobre mí.</p>
+    </section>
+
+    <section id="biografia">
+        <h2>Biografía</h2>
+        <p>Mi nombre es Jefferson Rafael Narváez Peñaloza.
+          Desde temprana edad he tenido un fuerte compromiso con el aprendizaje continuo, enfocándome en herramientas y tendencias que impulsan el avance tecnológico .</p>
+    </section>
+
+    <section id="hobbies">
+        <h2>Hobbies</h2>
+        <p>Me gusta leer, hacer deporte como fútbol y programar.</p>
+    </section>
+
+</body>
+</html>
